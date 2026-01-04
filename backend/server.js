@@ -39,6 +39,20 @@ app.use(express.urlencoded({ extended: true, limit: '50mb' })) // Parse URL-enco
 // MongoDB Atlas Connection
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://your-connection-string'
 
+// Validate MONGODB_URI before connecting
+if (!MONGODB_URI || MONGODB_URI === 'mongodb+srv://your-connection-string') {
+  console.error('❌ MONGODB_URI is not set or is using placeholder value!')
+  console.error('Please set MONGODB_URI environment variable in Railway.')
+  process.exit(1)
+}
+
+if (!MONGODB_URI.startsWith('mongodb://') && !MONGODB_URI.startsWith('mongodb+srv://')) {
+  console.error('❌ Invalid MONGODB_URI format!')
+  console.error('Connection string must start with "mongodb://" or "mongodb+srv://"')
+  console.error('Current value (first 20 chars):', MONGODB_URI.substring(0, 20))
+  process.exit(1)
+}
+
 mongoose.connect(MONGODB_URI)
   .then(() => {
     console.log('✅ Connected to MongoDB Atlas')
