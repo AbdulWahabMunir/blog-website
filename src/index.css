@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
   color: #1e293b;
   /* Background image (shown once, covering the screen) */
-  background-image: url("redyellow1.png");
+  background-image: url("/redyellow1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
