@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <p className="footer-text">
-          © {currentYear} Minimal Blog. All rights reserved.
+          © {currentYear} Minimalist Blog. All rights reserved.
         </p>
       </div>
     </footer>
