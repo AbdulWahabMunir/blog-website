@@ -29,7 +29,7 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          Blog Platform
+          Minimalist Blog
         </Link>
         <nav className="nav">
           {/* Public Navigation */}
