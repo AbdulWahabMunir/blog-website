@@ -1,4 +1,4 @@
-# Blog Website - Final Year Project
+# Blog Website - Project
 
 A full-featured blog website with **MongoDB Atlas Cloud Database** backend. Built with React frontend and Node.js/Express backend, featuring user authentication, role-based access control (Admin and User), and complete CRUD operations for blog management.
 
@@ -344,11 +344,9 @@ VITE_API_URL=http://localhost:5000/api
 
 ## 📄 License
 
-This project is created for academic purposes as a Final Year Project.
+This project is created for academic purposes.
 
-## 👤 Author
-
-Created as part of Final Year Project - Blog Website Application with MongoDB Atlas
+Blog Website Application with MongoDB Atlas
 
 ---
 
